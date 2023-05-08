@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.5 on win32)" generated="20230508 15:43:00.512" rpa="false">
+<suite id="s1" name="Kumaran" source="C:\Users\SaravananNatarajan\Robot\Kumaran">
+<suite id="s1-s1" name="TestSuite" source="C:\Users\SaravananNatarajan\Robot\Kumaran\TestSuite">
+<suite id="s1-s1-s1" name="HomepageSuite" source="C:\Users\SaravananNatarajan\Robot\Kumaran\TestSuite\HomepageSuite.robot">
+<test id="s1-s1-s1-t1" name="Open Browser">
+<kw name="driver setup" library="Initalization">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20230508 15:43:01.323" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230508 15:43:01.322" endtime="20230508 15:43:02.668"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${Url}</arg>
+</arguments>
+<msg timestamp="20230508 15:43:02.669" level="INFO">Opening url 'https://kumaran.com'</msg>
+<status status="PASS" starttime="20230508 15:43:02.668" endtime="20230508 15:43:18.283"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 15:43:18.283" endtime="20230508 15:43:18.455"></status>
+</kw>
+<status status="PASS" starttime="20230508 15:43:01.321" endtime="20230508 15:43:18.455"></status>
+</kw>
+<status status="PASS" starttime="20230508 15:43:01.320" endtime="20230508 15:43:18.455" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Banking">
+<kw name="Home Page banking" library="01HomepageBanking">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${logo}</arg>
+</arguments>
+<msg timestamp="20230508 15:43:18.458" level="INFO">Clicking element '//img[@class='starting-logo dark-version ']'.</msg>
+<status status="PASS" starttime="20230508 15:43:18.457" endtime="20230508 15:43:20.557"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${MOIndustries}</arg>
+</arguments>
+<msg timestamp="20230508 15:43:20.559" level="INFO">Simulating Mouse Over on element '//a[@class='mega-menu-link sf-with-ul'][normalize-space()='Industries']'.</msg>
+<status status="PASS" starttime="20230508 15:43:20.558" endtime="20230508 15:43:20.903"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Banking}</arg>
+</arguments>
+<msg timestamp="20230508 15:43:20.904" level="INFO">Clicking element '//ul[@class='sf-menu sf-js-enabled sf-arrows']//li[@id='mega-menu-item-527']//div[@class='menucontent one']'.</msg>
+<status status="PASS" starttime="20230508 15:43:20.904" endtime="20230508 15:43:31.617"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Bankingsev1}</arg>
+</arguments>
+<status status="PASS" starttime="20230508 15:43:31.618" endtime="20230508 15:43:31.931"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Bankingsev2}</arg>
+</arguments>
+<status status="PASS" starttime="20230508 15:43:31.932" endtime="20230508 15:43:32.244"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${MOIndustries}</arg>
+</arguments>
+<msg timestamp="20230508 15:43:32.246" level="INFO">Simulating Mouse Over on element '//a[@class='mega-menu-link sf-with-ul'][normalize-space()='Industries']'.</msg>
+<status status="PASS" starttime="20230508 15:43:32.245" endtime="20230508 15:43:32.570"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Insurance}</arg>
+</arguments>
+<msg timestamp="20230508 15:43:32.571" level="INFO">Clicking element '//ul[@class='sf-menu sf-js-enabled sf-arrows']//li[@id='mega-menu-527-0-1']//a'.</msg>
+<status status="PASS" starttime="20230508 15:43:32.571" endtime="20230508 15:43:46.682"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Bankingsev3}</arg>
+</arguments>
+<status status="PASS" starttime="20230508 15:43:46.682" endtime="20230508 15:43:52.029"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Bankingsev2}</arg>
+</arguments>
